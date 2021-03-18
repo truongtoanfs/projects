@@ -50,6 +50,7 @@ body {
 .projects {
   background-color: var(--charcoal-color);
   padding: 3rem 2rem;
+  min-height: calc(100vh - 61px);
 }
 .projects-title {
   text-align: center;
@@ -57,7 +58,7 @@ body {
 .projects-title h1 {
   color: var(--white-color);
   text-align: center;
-  margin: 0 1rem 3.2rem;
+  margin: 0 1rem 5.2rem;
   font-size: 3rem;
   text-transform: capitalize;
   border-bottom: 2px solid var(--white-color);
@@ -147,7 +148,7 @@ body {
 /* set media query */
 @media (min-width: 497px) {
   .projects {
-    padding: 3rem 4rem;
+    padding: 4rem;
   }
 }
 @media (min-width: 768px) {
