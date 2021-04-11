@@ -27,6 +27,9 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+.navbar-list > :last-child {
+  margin-right: 1rem;
+}
 .navbar-link {
   display: inline-block;
   padding: 1rem;
@@ -35,14 +38,17 @@ body {
   font-size: 1.5rem;
   color: var(--white-color);
 }
-.navbar-list > :last-child {
-  margin-right: 3rem;
-} 
 .active.navbar-link {
   background-color: var(--black-color);
 }
 .navbar-link:hover {
   opacity: 0.86;
+}
+
+@media (min-width: 497px) {
+  .navbar-list > :last-child {
+    margin-right: 3rem;
+  } 
 }
 
 
@@ -145,7 +151,7 @@ body {
 .project:hover .project-name::after {
  opacity: 1;
 }
-/* set media query */
+
 @media (min-width: 497px) {
   .projects {
     padding: 4rem;
@@ -193,7 +199,6 @@ body {
   color: var(--orange-color);
 }
 
-/* make responsive */
 @media (min-width: 768px) {
   .contact-content {
     display: flex;
